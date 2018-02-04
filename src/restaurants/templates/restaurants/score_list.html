@@ -1,0 +1,15 @@
+
+{% extends "base.html" %}
+
+{% block head_title %}Performance Collection | {{ block.super}}{% endblock head_title %}
+
+{% block content %}
+<h1>Item List</h1>
+
+<ul>
+{% for obj in object_list %}
+    <li><a href='/restaurants/{{ obj.slug }}/'>{{ obj }}</a>
+    <i>{{ obj.Call_number }}</i> {{ obj.author }} - {{ obj.publisher }}</li>
+{% endfor %}
+</ul>
+{% endblock %}

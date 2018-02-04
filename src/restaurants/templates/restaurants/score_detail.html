@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block head_title %}Restaurants | {{ block.super}}{% endblock head_title %}
+
+{% block content %}
+<h3>{{ object.title }} <small> {{ object.collection }}</small></h3>
+<p>{{ obj.Call_number }}</P>
+<p>{{ object.place_of_publication }} : {{ object.publisher }} ; {{ object.date_of_publication }}</p>
+<p>{{ object.author }}</P>
+<p>{{ object.collation }}</P>
+<p>{{ object.Subject }}</P>
+<p>{{ object.holdings }}</P>
+<p>{{ object.condition }}</P>
+
+{% endblock %}
